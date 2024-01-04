@@ -10,18 +10,22 @@ module.exports = {
   };
 
 function newSkill(req, res) {
-  res.render('skills/new', {title: 'New Skill'})
+  res.render('skills/new', {
+    title: 'New Skill'
+  });
 }
 
 function index(req, res) {
     res.render('skills/index', {
-      skills: Skill.getAll()
+      skills: Skill.getAll(),
+      title:'Dev Skills'
     });
   }
 
   function show(req, res) {
     res.render('skills/show', {
       skill: Skill.getOne(req.params.id),
+      title: 'all skills'
     });
   }
   
