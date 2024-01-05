@@ -6,3 +6,19 @@ body {
 a {
   color: #00B7FF;
 }
+
+
+.delete-form {
+  display: inline-block;
+  margin-right: 10px;
+}
+	
+.delete-form button {
+  color: #006400;
+  border-radius: 35%;
+  margin: .2em;
+}
+	
+li {
+  list-style: none;
+}
