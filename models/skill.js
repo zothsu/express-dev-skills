@@ -6,8 +6,17 @@ const skills = [
 
 module.exports = {
   getAll,
-  getOne
+  getOne,
+  create
 };
+
+function create(skill) {
+  // Add the id
+  skill.id = Date.now() % 1000000;
+  // New skills would be done :)
+  skill.done = true;
+  skills.push(skill);
+}
 
 function getOne(id) {
   // URL params are strings - convert to a number
